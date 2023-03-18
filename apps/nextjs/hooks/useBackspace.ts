@@ -7,6 +7,19 @@ import {
 import { useSetAtom } from 'jotai';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+/**
+ * Set global states related to a backspace navigation
+ * 
+ * This hook can be invoked in _app.ts file to append event listener.
+ * when event is triggered, those three global states are set.
+ * 
+ * 1. {@link isBeforePopStateEventTriggered `isBeforePopStateEventTriggered`}
+ * 2. {@link isRoutingAtom `isRoutingAtom`}
+ * 3. {@link isCurrentPageVisitedByBackspaceAtom `isCurrentPageVisitedByBackspaceAtom`}
+ * 
+ * please note that out of the three states mentioned earlier, {@link isBeforePopStateEventTriggered `isBeforePopStateEventTriggered`} is not a state managed by React,
+ * but rather a regular variable
+ */
 
 const useBackspace = () => {
   const router = useRouter();
