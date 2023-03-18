@@ -25,7 +25,7 @@ const useBackspace = () => {
       // when route starts, isRouting state is set to 'true'
       setIsRouting(true);
 
-      // depending on isBeforePopStateEventTriggerd variable, isCurrentPageVisitedByBackspace is set to 'true' or 'false'
+      // depending on isBeforePopStateEventTriggered variable, isCurrentPageVisitedByBackspace is set to 'true' or 'false'
       isBeforePopStateEventTriggered
         ? setIsCurrentPageVisitedByBackspace(true)
         : setIsCurrentPageVisitedByBackspace(false);
@@ -37,7 +37,7 @@ const useBackspace = () => {
     };
 
     router.beforePopState(() => {
-      // update isBeforePopStateEventTriggerd variable as true only when beforePopState event is triggered
+      // update isBeforePopStateEventTriggered variable as true only when beforePopState event is triggered
       updateIsBeforePopStateEventTriggered(true);
       return true;
     });
