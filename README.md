@@ -1,6 +1,6 @@
-# Purpose
+# Factory
 
-This library is a collection of functions include helper and hooks that i made.
+Factory is a collection of functions include helper and hooks that i made.
 
 # Hooks
 1. [**useIsDirty**](https://github.com/wherehows/factory/blob/main/apps/nextjs/hooks/useIsDirty.ts)
